@@ -1,0 +1,187 @@
+<section class="section-cards text-center">
+    <main>
+      <img src="/images/img1.webp" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Ropa
+      </h2>
+      <p>Todo tipo de prendas femeninas y masculinas.</p>
+    </main>
+  
+
+    <main>
+      <img src="/images/img4.webp" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Calzado
+      </h2>
+      <p>Calzado para mujeres y hombres.</p>
+    </main>
+  
+
+    <main>
+      <img src="/images/cosmeticos.jpg" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Cosméticos
+      </h2>
+      <p>Cosméticos para su belleza y disfrute.</p>
+    </main>
+  
+
+
+    <main>
+      <img src="/images/accesories.jpg" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Accesorios
+      </h2>
+      <p>Todo tipo de accesorios.</p>
+    </main>
+  
+
+
+    <main>
+      <img src="/images/bolsos.jpg" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Bolsos
+      </h2>
+      <p>Vista con estilo.</p>
+    </main>
+  
+    <main>
+      <img src="/images/miscelaneas.jpg" alt="" />
+      <h2
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+      >
+        Otros
+      </h2>
+      <p>Miscelaneas.</p>
+      
+    </main>
+  
+    
+  </section>
+  
+  <style>
+    .section-cards {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    main {
+      width: 340px;
+      height: 380px;
+      border-radius: 8px;
+      backdrop-filter: blur(0px) saturate(100%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(14, 13, 13, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    main h2 {
+      text-align: center;
+    }
+    main p {
+      font-size: 13px;
+      max-width: 310px;
+      text-align: center;
+    }
+  
+    main:hover {
+      transform: scale(1.01);
+      transition: all 0.3s ease;
+    }
+  
+    main img {
+      width: 100%;
+      height: 210px;
+      border-radius: 8px;
+    }
+  
+    main span {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+  
+    .button {
+      --color: #ffffff;
+      width: 65px;
+      height: 28px;
+      background-color: transparent;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: 0.5s;
+      font-weight: 400;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid;
+      text-transform: uppercase;
+      color: var(--color);
+      z-index: 1;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .button::before,
+    .button::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 55px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+      background: linear-gradient(10deg, blue, green);
+      transition: 1s ease;
+    }
+  
+    .button::before {
+      top: -1em;
+      left: -1em;
+    }
+  
+    .button::after {
+      left: calc(100% + 1em);
+      top: calc(100% + 1em);
+    }
+  
+    .button:hover::before,
+    .button:hover::after {
+      height: 410px;
+      width: 410px;
+    }
+  
+    .button:hover {
+      color: rgb(255, 255, 255);
+    }
+  
+    .button:active {
+      filter: brightness(0.8);
+    }
+  
+    @media (width < 330px) {
+      main{
+        width: 300px;
+      }
+    }
+  </style>
+  

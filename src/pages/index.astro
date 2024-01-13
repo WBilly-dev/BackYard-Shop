@@ -1,0 +1,247 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="home">
+  <section transition:animate="slide"  class="home cursor-default px-8% text-white gap-4">
+    <h1 class="slogan text-6xl font-semibold">
+      Encuentra tu <span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >Inspiración</span
+      > en cada producto.
+    </h1>
+
+    <div class="flex gap-6 mt-3">
+      <a class="button" href="/products"> <span>Productos</span></a>
+      <a class="button" href="/Categories"> <span>Categorías</span></a>
+      <a class="button" href="/"> <span>Contactos</span></a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .home {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(/images/bg.webp);
+    width: 100%;
+    min-height: calc(100vh - 52px);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two {
+    width: 100%;
+    min-height: 70vh;
+ 
+  }
+
+  .section-three{
+    width: 100%;
+    min-height: 85vh;
+  }
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(4rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 200px) {
+    span.item {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:linear-gradient(30deg, blue, violet);
+    filter: blur(5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 500px) {
+    span.item2 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+
+  @media (width > 200px) {
+    span.item3 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+
+  span.item4{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 9rem;
+    height: 7rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:#008697;
+    filter: blur(3.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 200px) {
+    span.item4 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+  span.item5{
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 9rem;
+    height: 7rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background:#770053;
+    filter: blur(3.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index:-1 ;
+  }
+
+  @media (width > 200px) {
+    span.item5 {
+      right: 100px; 
+      opacity: 0.8; 
+      display: block; 
+    }
+  }
+
+
+  .slogan {
+    max-width: 850px;
+    text-align: center;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    --color: #ffffff;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button::before,
+  .button::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(10deg, blue, green);
+    transition: 1s ease;
+  }
+
+  .button::before {
+    top: -1em;
+    left: -1em;
+  }
+
+  .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+
+  .button:hover::before,
+  .button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+
+  .button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .button:active {
+    filter: brightness(0.8);
+  }
+
+  
+
+
+  @media (width < 1092px) {
+    .section-two .art2{
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .art2{
+      justify-content: center;
+  }
+  }
+
+  @media (width < 600px) {
+    h1{
+      font-size: 2rem;
+    }
+  }
+  
+</style>

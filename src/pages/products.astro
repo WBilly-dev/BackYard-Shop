@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cards from "../components/Cards.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Products">
+  <section class="text-white flex flex-col gap-14 py-10 px-8%">
+    <article class="full flex flex-col gap-3">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-center text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Echa un vistazo a todos los productos disponibles.
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <p class="max-w-4xl text-center m-auto ">
+        Estos productos se irán actualizando a medida que estén disponibles.
+      </p>
+    </article>
+    <Cards />
+    <article class="px-8% flex flex-col gap-5">
+      <span class="flex gap-1 items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Calidad Garantizada
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <div class="flex justify-between items-center flex-wrap gap-5">
+        <p class="max-w-lg">
+          Todos los productos son nuevos a estrenar por usted.
+        </p>
+        <div class="flex gap-12 flex-wrap justify-center items-center ">
+
+          <img class=" hover:animate-jump w-36" src="/images/marke.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/marke2.svg" alt="">
+          <img class=" hover:animate-jump w-32" src="/images/seo.svg" alt="">
+        </div>
+      </div>
+    </article>
+  </section>
+</Layout>
+
+

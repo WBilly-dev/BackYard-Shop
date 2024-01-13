@@ -1,0 +1,133 @@
+<header
+  transition:animate="none"
+  class="sticky top-0 header w-full px-8% z-30"
+>
+  <span
+    class="flex items-center justify-start font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 from-10% via-primary via-30% to-green-600 text-xl"
+    >BACKYARD</span
+  >
+  <nav class="flex z-30 justify-center items-center gap-10 nav text-white">
+    <a class="h-full py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition" href="/"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >I</span
+      >nicio</a
+    >
+    
+    <a class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition" href="/products"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >P</span
+      >roductos</a
+    >
+    <a class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition" href="/Categories"
+    ><span
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+      >C</span
+    >ategorías</a
+  >
+    <a class="py-3 hover:text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 transition" href="/about"
+      ><span
+        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600"
+        >A</span
+      >bout</a
+    >
+  </nav>
+  <div class=" redes h-full flex justify-end items-center gap-2 z-10">
+    <a target="_blank" href="https://github.com/WBilly-dev"><img class="w-6" src="/images/github.svg" alt="" /></a>
+    <a target="_blank" href="https://www.linkedin.com/in/william-gomez-fernandez-42502121b/"><img class="w-6" src="/images/linkedin.svg" alt="" /></a>
+  </div>
+
+  <span class="item"></span>
+  <span class="item2"></span>
+  <span class="item3"></span>
+</header>
+
+
+<style>
+  .header {
+    background-color: rgb(9, 9, 9);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    opacity: 0.96;
+  }
+
+  .nav {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .redes a:hover{
+    filter: invert(13%) sepia(90%) saturate(5054%) hue-rotate(245deg) brightness(73%) contrast(121%);
+    transition: all .2s ease-in-out;
+  }
+
+  span.item {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 65px;
+    height: 30px;
+    /* transform: rotate(90deg) skewX(-12deg); */
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(1.5rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    width: 85px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, blue, violet);
+    filter: blur(1.3rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item3 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 130px;
+    height: 25px;
+    border-radius: 1rem;
+    background: linear-gradient(35deg, rgb(0, 255, 170), rgb(0, 24, 240));
+    filter: blur(1.3rem);
+    opacity: 0.8;
+    display: none;
+  }
+
+  @media (width > 400px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  @media (width < 650px) {
+    .header{
+      display: none;
+    }
+  }
+</style>

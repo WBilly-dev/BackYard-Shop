@@ -1,0 +1,189 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="About">
+  <section class="px-8% py-10 flex flex-col gap-24 text-white ">
+    <article class="flex flex-col gap-5">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Buenas
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <div
+        class="history flex flex-col justify-between items-center flex-wrap gap-20"
+      >
+        <p class="text-center">
+         Este sitio a sido creado para hacer llegar a usted nuestro cliente los productos disponibles para su venta, 
+         todo aquí está nuevo a estrenar por usted de muy buena calidad.
+        </p>
+
+    </article>
+
+    <article class="flex flex-col gap-8 mt-60">
+      <span class="flex gap-1 justify-center items-center">
+        <h1
+          class="text-2xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Qué tenga buen día.
+        </h1>
+        <img class="w-6" src="/images/arrow.svg" alt="" />
+      </span>
+      <img
+        class="hover:animate-jump w-60 rounded-full m-auto"
+        src="/images/alex.webp"
+        alt=""
+      />
+      <p class="max-w-3xl text-center m-auto">
+        Desarrollado por <a class="text-sky-600" href="https://www.linkedin.com/in/william-gomez-fernandez-42502121b/">William Gómez Fernández</a>
+      </p>
+    </article>
+</Layout>
+
+<style>
+  span.item {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 7rem;
+    height: 8rem;
+    transform: rotate(90deg) skewX(-12deg);
+    border-radius: 1.5rem;
+    background-color: #008697;
+    filter: blur(3.5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item2 {
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    width: 15rem;
+    height: 10rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, rgb(171, 201, 4), rgb(163, 11, 233));
+    filter: blur(5rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 600px) {
+    span.item2 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  span.item3 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 11rem;
+    height: 8rem;
+    transform: rotate(60deg) skewX(-12deg);
+    border-radius: 6rem;
+    background: linear-gradient(30deg, blue, violet);
+    filter: blur(4rem);
+    opacity: 0.8;
+    display: none;
+    z-index: -1;
+  }
+
+  @media (width > 300px) {
+    span.item3 {
+      right: 100px;
+      opacity: 0.8;
+      display: block;
+    }
+  }
+
+  .button {
+    --color: #ffffff;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button::before,
+  .button::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(10deg, blue, green);
+    transition: 1s ease;
+  }
+
+  .button::before {
+    top: -1em;
+    left: -1em;
+  }
+
+  .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+  }
+
+  .button:hover::before,
+  .button:hover::after {
+    height: 410px;
+    width: 410px;
+  }
+
+  .button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .button:active {
+    filter: brightness(0.8);
+  }
+
+  @media (width < 1200px) {
+    .history {
+      justify-content: center;
+    }
+
+    @media (width < 946px) {
+      .support{
+         gap: 100px;
+      }
+    }
+  }
+</style>
