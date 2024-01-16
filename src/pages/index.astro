@@ -13,9 +13,9 @@ import Layout from "../layouts/Layout.astro";
     </h1>
 
     <div id="mainB" class="grid  gap-6 mt-3">
-      <a class="button" href="/Categories"> <span>Categorías</span></a>
+      <a class="button" href="/categories"> <span>Categorías</span></a>
       <a class="button" href="/products"> <span>Productos</span></a>
-      <a class="button" href="/"> <span>Contactos</span></a>
+      <a class="button" href="/contacts"> <span>Contactos</span></a>
     </div>
   </section>
 
@@ -243,5 +243,14 @@ import Layout from "../layouts/Layout.astro";
       font-size: 2rem;
     }
   }
+
+  @media (width > 500px) {
+  #mainB{
+    display: flex;
+    flex-direction: row;
+  }
+    
+  }
+
   
 </style>

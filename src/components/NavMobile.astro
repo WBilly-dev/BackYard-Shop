@@ -1,11 +1,11 @@
-<header class="mobile "  transition:animate="none">
+<header class="mobile "  transition:animate="slide">
   <nav class="nav-mobile">
     
-    <div class="parent   rounded-lg h-10 align-middle">
-      <a href="/"><img class="w-6" src="/images/home.svg" alt="" /></a>
-      <a href="/Categories"><img class="w-6" src="/images/dropbox.svg" alt=""></a>
-      <a href="/products"><img class="w-6" src="/images/projects.svg" alt="" /></a>
-      <a href="/about"><img class="w-6" src="/images/about.svg" alt="" /></a>
+    <div class="parent  h-10 align-middle">
+      <a href="/"><img class="w-6 bg-white rounded-md hover:rounded-xl" src="/images/home.svg" alt="" /></a>
+      <a href="/categories"><img class="w-6 rounded-sm bg-white hover:rounded-xl" src="/images/categories.svg" alt=""></a>
+      <a href="/products"><img class="w-6 bg-white rounded-md hover:rounded-xl" src="/images/products.svg" alt="" /></a>
+      <a href="/about"><img class="w-6 bg-white rounded-md hover:rounded-xl" src="/images/about.svg" alt="" /></a>
     </div>
 
   </nav>
@@ -21,20 +21,24 @@
   position: relative;
  }
 
+ 
 
 .parent{
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
   margin-top: 2px;
   width: 100%;
-  background-color: rgba(255, 228, 196, 0.114);
+  background-color: black;
   align-items: center;  
 
 }
 
-.parent a:hover{
-  opacity: 20%;
+
+
+.parent :nth-child(2):hover{
+  background-color: white;
+  border-radius: 0.5rem;
 }
 @media (width > 500px) {
   .parent{
