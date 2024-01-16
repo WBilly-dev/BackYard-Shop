@@ -3,13 +3,14 @@ import Navbar from "../components/Navbar.astro";
 import NavMobile from "../components/NavMobile.astro";
 import { ViewTransitions } from "astro:transitions";
 import { fade } from "astro:transitions";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
 ---
-
+<SpeedInsights/>
 <!doctype html>
 <html lang="es">
   <head>
