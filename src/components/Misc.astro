@@ -1,0 +1,203 @@
+<section class="section-cards">
+    <main>
+        <img src="/images/products/misc/m1.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Cuchillas de Afeitarse Marca Gillette con Cuchillas de Repuesto
+        </h2>
+        <p>Estas cuchillas de afeitar de Gillette ofrecen un afeitado suave y preciso. Vienen con cuchillas de repuesto para que puedas mantener tu afeitadora lista en todo momento.</p>
+      </main>
+    
+      <main>
+        <img src="/images/products/misc/m2.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Cepillos para Lavar
+        </h2>
+        <p>Los cepillos de lavar son herramientas esenciales para la limpieza en el hogar. Úsalos para fregar platos, limpiar superficies o incluso para cuidar tus zapatos y ropa.</p>
+      </main>
+    
+
+      <main>
+        <img src="/images/products/misc/m3.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Liga de Ejercicios
+        </h2>
+        <p>Las ligas de resistencia son perfectas para ejercitarte en casa o en espacios reducidos. Puedes trabajar todos los grupos musculares con estas bandas elásticas.</p>
+      </main>
+    
+      
+    
+      <main>
+        <img src="/images/products/misc/m5.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Peróxido Marca PlatinOxide
+        </h2>
+        <p>El peróxido es un desinfectante y blanqueador utilizado en diversas aplicaciones, como la limpieza de heridas o la decoloración del cabello.</p>
+      </main>
+    
+
+      <main>
+        <img src="/images/products/misc/m6.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Pilas AAA
+        </h2>
+        <p>Las pilas AAA son baterías pequeñas y versátiles utilizadas en dispositivos como controles remotos, relojes y juguetes. Asegúrate de tener siempre algunas a mano.</p>
+      </main>
+    
+
+      <main>
+        <img src="/images/products/misc/m7.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Cuchillas de Afeitar Marca CoolShave
+        </h2>
+        <p>Estas cuchillas de afeitar ofrecen un afeitado suave y cómodo. Perfectas para mantener una piel bien cuidada.</p>
+      </main>
+    
+      <main>
+        <img src="/images/products/misc/m8.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+        Brochas para Tinte
+        </h2>
+        <p>Las brochas para tintes son ideales para aplicar colorantes en el cabello. Te ayudarán a lograr una aplicación uniforme y precisa.</p>
+      </main>
+    
+      
+      <main>
+        <img src="/images/products/misc/m9.webp" alt="" />
+        <h2
+          class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+        >
+          Rodillera
+        </h2>
+        <p>Si necesitas apoyo y protección para tus rodillas durante actividades físicas o rehabilitación, una rodillera es esencial. Elige una que se ajuste cómodamente y brinde el soporte necesario.</p>
+      </main>
+
+</section>
+
+<style>
+    .section-cards {
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       gap: 60px;
+     }
+     main {
+       width: 320px;
+       height: 360px;
+       border-radius: 8px;
+       backdrop-filter: blur(0px) saturate(100%);
+       -webkit-backdrop-filter: blur(16px) saturate(180%);
+       background-color: rgba(14, 13, 13, 0.2);
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+     }
+   
+     main h2 {
+       text-align: center;
+     }
+     main p {
+       font-size: 13px;
+       max-width: 310px;
+       text-align: center;
+     }
+   
+     main:hover {
+       transform: scale(1.01);
+       transition: all 0.3s ease;
+     }
+   
+     main img {
+       width: 100%;
+       height: 260px;
+       border-radius: 8px;
+     }
+   
+     main span {
+       display: flex;
+       justify-content: space-between;
+       padding: 0 10px;
+     }
+   
+     .button {
+       --color: #ffffff;
+       width: 65px;
+       height: 28px;
+       background-color: transparent;
+       border-radius: 5px;
+       position: relative;
+       overflow: hidden;
+       cursor: pointer;
+       transition: 0.5s;
+       font-weight: 400;
+       font-size: 12px;
+       font-weight: 600;
+       border: 1px solid;
+       text-transform: uppercase;
+       color: var(--color);
+       z-index: 1;
+       text-decoration: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   
+     .button::before,
+     .button::after {
+       content: "";
+       display: block;
+       width: 55px;
+       height: 55px;
+       transform: translate(-50%, -50%);
+       position: absolute;
+       border-radius: 50%;
+       z-index: -1;
+       background: linear-gradient(10deg, blue, green);
+       transition: 1s ease;
+     }
+   
+     .button::before {
+       top: -1em;
+       left: -1em;
+     }
+   
+     .button::after {
+       left: calc(100% + 1em);
+       top: calc(100% + 1em);
+     }
+   
+     .button:hover::before,
+     .button:hover::after {
+       height: 410px;
+       width: 410px;
+     }
+   
+     .button:hover {
+       color: rgb(255, 255, 255);
+     }
+   
+     .button:active {
+       filter: brightness(0.8);
+     }
+   
+     @media (width < 330px) {
+       main{
+         width: 300px;
+       }
+     }
+   </style>

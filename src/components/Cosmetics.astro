@@ -1,0 +1,199 @@
+<section class="section-cards">
+    
+  <main>
+    <img src="/images/products/cosmeticos/c1.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Perfume Maja
+    </h2>
+    <p>El perfume Maja es una fragancia clásica y sofisticada que ha encantado a mujeres de todo el mundo durante más de 100 años. Su aroma delicado y elegante es perfecto para cualquier ocasión.</p>
+  </main>
+
+
+  <main>
+    <img src="/images/products/cosmeticos/c2.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Perfumes de hombre
+    </h2>
+    <p>Animale: Un perfume oriental amaderado con toques de nuez moscada, miel, piña y lima.</p>
+    <p>Conexion: Una fragancia fresca y seductora con notas de lavanda, vetiver, musgo de roble y cuero.</p>
+  </main>
+
+
+  <main>
+    <img src="/images/products/cosmeticos/c3.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Perfumes de hombre
+    </h2>
+    <p>OK Cool: Un aroma suave y relajado, ideal para el día a día inspirado en Calvin Klein</p>
+    <p>Suave: Este perfume ofrece una fragancia suave y agradable. Su sencillez y elegancia lo hacen perfecto para cualquier ocasión.</p>
+  </main>
+
+  
+  <main>
+    <img src="/images/products/cosmeticos/c4.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Talco Maja
+    </h2>
+    <p>Suaviza y acondiciona la piel, proporcionando una sensación de frescura. También ayuda a eliminar la fricción y prevenir irritaciones.</p>
+  </main>
+
+
+  <main>
+    <img src="/images/products/cosmeticos/c5.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Kit Maja
+    </h2>
+    <p>Este kit completo incluye talco, perfume, jabón y cinta para el pelo, todo con la fragancia clásica de Maja.</p>
+  </main>
+
+
+  <main>
+    <img src="/images/products/cosmeticos/c6.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+      Colonia para después del afeitado
+    </h2>
+    <p>Un producto refrescante y calmante para después del afeitado.</p>
+  </main>
+
+
+  <main>
+    <img src="/images/products/misc/m4.webp" alt="" />
+    <h2
+      class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-10% via-primary via-30% to-green-600 font-semibold"
+    >
+    Brillo Labial Marca Hold Morning
+    </h2>
+    <p>El brillo labial Hold Morning ofrece un toque dorado y brillante a tus labios. Ideal para dar un aspecto luminoso y fresco.</p>
+  </main>
+
+</section>
+
+
+
+
+<style>
+    .section-cards {
+       width: 100%;
+       height: auto;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       gap: 60px;
+     }
+     main {
+       width: 320px;
+       height: 360px;
+       border-radius: 8px;
+       backdrop-filter: blur(0px) saturate(100%);
+       -webkit-backdrop-filter: blur(16px) saturate(180%);
+       background-color: rgba(14, 13, 13, 0.2);
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+     }
+   
+     main h2 {
+       text-align: center;
+     }
+     main p {
+       font-size: 13px;
+       max-width: 310px;
+       text-align: center;
+     }
+   
+     main:hover {
+       transform: scale(1.01);
+       transition: all 0.3s ease;
+     }
+   
+     main img {
+       width: 100%;
+       height: 260px;
+       border-radius: 8px;
+     }
+   
+     main span {
+       display: flex;
+       justify-content: space-between;
+       padding: 0 10px;
+     }
+   
+     .button {
+       --color: #ffffff;
+       width: 65px;
+       height: 28px;
+       background-color: transparent;
+       border-radius: 5px;
+       position: relative;
+       overflow: hidden;
+       cursor: pointer;
+       transition: 0.5s;
+       font-weight: 400;
+       font-size: 12px;
+       font-weight: 600;
+       border: 1px solid;
+       text-transform: uppercase;
+       color: var(--color);
+       z-index: 1;
+       text-decoration: none;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   
+     .button::before,
+     .button::after {
+       content: "";
+       display: block;
+       width: 55px;
+       height: 55px;
+       transform: translate(-50%, -50%);
+       position: absolute;
+       border-radius: 50%;
+       z-index: -1;
+       background: linear-gradient(10deg, blue, green);
+       transition: 1s ease;
+     }
+   
+     .button::before {
+       top: -1em;
+       left: -1em;
+     }
+   
+     .button::after {
+       left: calc(100% + 1em);
+       top: calc(100% + 1em);
+     }
+   
+     .button:hover::before,
+     .button:hover::after {
+       height: 410px;
+       width: 410px;
+     }
+   
+     .button:hover {
+       color: rgb(255, 255, 255);
+     }
+   
+     .button:active {
+       filter: brightness(0.8);
+     }
+   
+     @media (width < 330px) {
+       main{
+         width: 300px;
+       }
+     }
+   </style>
